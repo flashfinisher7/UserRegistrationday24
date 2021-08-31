@@ -21,7 +21,7 @@ namespace UserRegistration
             return result;
         }
         /// <summary>
-        ///   Validating the Last Name
+        ///  Validating the Last Name
         /// </summary>
         public bool ValidateLastName(string lastName)
         {
@@ -43,7 +43,7 @@ namespace UserRegistration
         //Pattern for validating the Mobile Number
         string numberPattern = "^[1-9]{1}[0-9]{0,3}\\s[1-9]{1}[0-9]{9}$";
         /// <summary>
-        ///  Validating the Mobile Number
+        ///   Validating the Mobile Number
         /// </summary>
         public bool ValidateMobileNumber(string mobileNumber)
         {
@@ -54,7 +54,7 @@ namespace UserRegistration
         //Pattern for validating the password
         string passwordPattern = "^(?=.*[A-Z])(?=.*[0-9])(?=[\\w]*[\\W][\\w]*$)[A-Za-z1-9.@!#$&%^*]{8,}";
         /// <summary>
-        ///  Validating the Password
+        ///   Validating the Password
         /// </summary>
         public bool ValidatePassword(string password)
         {

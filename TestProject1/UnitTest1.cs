@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UserRegistration;
-
-namespace TestProject1
+namespace TestProject
 {
     [TestClass]
     public class UnitTest1
@@ -40,7 +39,7 @@ namespace TestProject1
         public void EmailValidationShouldReturnTrue()
         {
             //Arrange
-            string email = "Anil@gmail.com";
+            string email = "Anil07@gmail.com";
             //Act
             bool result = user.ValidateEmail(email);
             //Assert
@@ -50,7 +49,7 @@ namespace TestProject1
         public void MobileNumberValidationShouldReturnTrue()
         {
             //Arrange
-            string mobileNumber = "91 9494400886";
+            string mobileNumber = "91 9494400887";
             //Act
             bool result = user.ValidateMobileNumber(mobileNumber);
             //Assert
@@ -73,7 +72,7 @@ namespace TestProject1
         public void FirstNameValidationShouldReturnFalse()
         {
             //Arrange
-            string firstName = "anil";
+            string firstName = "Anil";
             //Act
             bool result = user.ValidateFirstName(firstName);
             //Assert
@@ -93,7 +92,7 @@ namespace TestProject1
         public void EmailValidationShouldReturnFalse()
         {
             //Arrange
-            string email = "kumar@com";
+            string email = "anil@com";
             //Act
             bool result = user.ValidateEmail(email);
             //Assert
@@ -103,7 +102,7 @@ namespace TestProject1
         public void MobileNumberValidationShouldReturnFalse()
         {
             //Arrange
-            string mobileNumber = "91 949440887";
+            string mobileNumber = "91 9494400886";
             //Act
             bool result = user.ValidateMobileNumber(mobileNumber);
             //Assert
@@ -113,7 +112,7 @@ namespace TestProject1
         public void PasswordValidationShouldReturnFalse()
         {
             //Arrange
-            string password = "kumar07";
+            string password = "Anil07";
             //Act
             bool result = user.ValidatePassword(password);
             //Assert
@@ -132,6 +131,82 @@ namespace TestProject1
         public void ValidateSampleEmailsShouldReturnTrue(string email)
         {
             Assert.IsTrue(user.ValidateEmail(email));
+        }
+        [TestMethod]
+        public void FirstNameValidationShouldReturnException()
+        {
+            try
+            {
+                //Arrange
+                string firstName = "Anil";
+                //Act
+                bool result = user.ValidateFirstName(firstName);
+            }
+            catch (InvalidUserException ex)
+            {
+                //Assert
+                Assert.AreEqual("It is Invalid", ex.Message);
+            }
+        }
+        [TestMethod]
+        public void LastNameValidationShouldReturnException()
+        {
+            try
+            {
+                //Arrange
+                string lastName = "Kumar";
+                //Act
+                bool result = user.ValidateLastName(lastName);
+            }
+            catch (InvalidUserException ex)
+            {
+                //Assert
+                Assert.AreEqual("It is Invalid", ex.Message);
+            }
+        }
+        [TestMethod]
+        public void EmailValidationShouldReturnException()
+        {
+            try
+            {
+                //Arrange
+                string email = "Anil43@gmail.com";
+                //Act
+                bool result = user.ValidateEmail(email);
+            }
+            catch (InvalidUserException ex)
+            {
+                //Assert
+                Assert.AreEqual("It is Invalid", ex.Message);
+            }
+        }
+        [TestMethod]
+        public void MobileNumberValidationShouldReturnException()
+        {
+            try
+            {
+                string mobileNumber = "91 9494400886";
+                bool result = user.ValidateMobileNumber(mobileNumber);
+            }
+            catch (InvalidUserException ex)
+            {
+                Assert.AreEqual("It is Invalid", ex.Message);
+            }
+        }
+        [TestMethod]
+        public void PasswordValidationShouldReturnException()
+        {
+            try
+            {
+                //Arrange
+                string password = "Anil@07";
+                //Act
+                bool result = user.ValidatePassword(password);
+            }
+            catch (InvalidUserException ex)
+            {
+                Assert.AreEqual("It is Invalid", ex.Message);
+            }
         }
     }
 }
