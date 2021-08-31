@@ -1,0 +1,16 @@
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\bin\Debug\net5.0\UserRegistration.exe
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\bin\Debug\net5.0\UserRegistration.deps.json
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\bin\Debug\net5.0\UserRegistration.runtimeconfig.json
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\bin\Debug\net5.0\UserRegistration.runtimeconfig.dev.json
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\bin\Debug\net5.0\UserRegistration.dll
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\bin\Debug\net5.0\ref\UserRegistration.dll
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\bin\Debug\net5.0\UserRegistration.pdb
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\UserRegistration.csproj.AssemblyReference.cache
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\UserRegistration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\UserRegistration.AssemblyInfoInputs.cache
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\UserRegistration.AssemblyInfo.cs
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\UserRegistration.csproj.CoreCompileInputs.cache
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\UserRegistration.dll
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\ref\UserRegistration.dll
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\UserRegistration.pdb
+C:\Users\mvsan\fellowship_program\day24\UserRegistration\UserRegistration\obj\Debug\net5.0\UserRegistration.genruntimeconfig.cache
