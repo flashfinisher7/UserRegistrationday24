@@ -49,7 +49,7 @@ namespace TestProject
         public void MobileNumberValidationShouldReturnTrue()
         {
             //Arrange
-            string mobileNumber = "91 9494400887";
+            string mobileNumber = "91 9494400888";
             //Act
             bool result = user.ValidateMobileNumber(mobileNumber);
             //Assert
@@ -59,7 +59,7 @@ namespace TestProject
         public void PasswordValidationShouldReturnTrue()
         {
             //Arrange
-            string password = "Anil@07";
+            string password = "Anil@123";
             //Act
             bool result = user.ValidatePassword(password);
             //Assert
@@ -102,7 +102,7 @@ namespace TestProject
         public void MobileNumberValidationShouldReturnFalse()
         {
             //Arrange
-            string mobileNumber = "91 9494400886";
+            string mobileNumber = "91 9494400887";
             //Act
             bool result = user.ValidateMobileNumber(mobileNumber);
             //Assert
@@ -170,7 +170,7 @@ namespace TestProject
             try
             {
                 //Arrange
-                string email = "Anil43@gmail.com";
+                string email = "Anil07@gmail.com";
                 //Act
                 bool result = user.ValidateEmail(email);
             }
